@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp-include": "^2.3.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-minify": "^2.1.0",
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "coredigix",
+  "license": "MIT",
+  "name": "coredigix-string",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coredigix/coredigix-string.git"
+  },
+  "keywords": [
+    "string"
+  ],
+  "bugs": {
+    "url": "https://github.com/coredigix/coredigix-string/issues"
+  },
+  "homepage": "https://github.com/coredigix/coredigix-string#readme",
+  "description": ""
+}
