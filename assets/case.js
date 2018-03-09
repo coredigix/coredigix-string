@@ -10,8 +10,8 @@ function strCamelCase(str){
 }
 
 /** Snick case */
-function strSnakeCase(str){
-	return str.trim().split(/[^\w]+|(?=[A-Z])/).map(w => w.toLowerCase()).join('-');
+function strSnakeCase(str, joinChar){
+	return str.trim().split(/[^\w]+|(?=[A-Z])/).map(w => w.toLowerCase()).join(joinChar || '-');
 }
 
 /** swap case */

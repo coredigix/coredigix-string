@@ -1,4 +1,6 @@
 'use strict';
+const assert	= require('assert');
+
 /** Capitalize */
 module.exports= {
 	capitalize			: strCapitalize,
