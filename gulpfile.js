@@ -4,6 +4,7 @@ var gulp	= require('gulp');
 var minify	= require('gulp-minify');
 var include	= require("gulp-include");
 var rename	= require("gulp-rename");
+var voidLine= require('gulp-remove-empty-lines');
 
 
 gulp.task('default', () => {
@@ -24,12 +25,12 @@ gulp.task('node', () => {
 
 
 gulp.task('brighter', () => {
-	gulp.src('assets/brighter-plugin.js')
+	gulp.src('assets/brighter.js')
 		.pipe(include({
 			hardFail: true
 		}))
-		.pipe(rename('coredigix-brighter-xss.js'))
-		.pipe(minify())
-		.pipe(gulp.dest("dist/"))
-		.pipe(gulp.dest('test/chrome-extension/js/'));
+		.pipe(voidLine())
+		.pipe(rename('string-utils.js'))
+		// .pipe(minify())
+		.pipe(gulp.dest('../brighterjs/assets/plugins/'));
 });

@@ -1,18 +1,6 @@
 'use strict';
 const assert	= require('assert');
 
-/** Capitalize */
-module.exports= {
-	capitalize			: strCapitalize,
-	camelCase			: strCamelCase,
-	snakeCase			: strSnakeCase,
-	swapCase			: strSwapCase,
+//=inculde api.js
 
-	split				: strSplit,
-
-	encodeURIComponent	: strEncodeURIComponent
-}
-
-//=include case.js
-//=include encode.js
-//=include split.js
+module.exports= strUtils;
